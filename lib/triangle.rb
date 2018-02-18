@@ -1,4 +1,5 @@
 class Triangle
+  include TriangleError
   attr_accessor :side1, :side2, :side3
 
   def initialize(side1, side2, side3)
@@ -22,12 +23,6 @@ class Triangle
       else
         return :scalene
       end
-    end
-  end
-
-  class TriangleError < StandardError
-    def message
-      "This is not a triangle"
     end
   end
 
