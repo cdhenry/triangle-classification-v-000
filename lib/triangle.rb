@@ -30,7 +30,7 @@ class Triangle
       "This is not a triangle"
     end
   end
-  
+
 end
 
 class TriangleError < StandardError
