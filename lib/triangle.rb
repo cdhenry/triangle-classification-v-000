@@ -14,6 +14,7 @@ class Triangle
       rescue TriangleError => error
         puts error.message
       end
+    else
       if @side1 == @side2 == @side3
         return :equilateral
       elsif @side1 == @side2 || @side2 == @side3 || @side3 == @side1
